@@ -12,14 +12,11 @@ Below is an example of how to use touchstone with jupyter notebooks
 
 Provide the following details:
 
-uuid="aeed6306-b7e1-11eb-b313-e86a640406b2"
-
-database="elasticsearch"
-
-es_index = "ocm-requests"
-
-es_url="https://search-perfscale-dev-chmf5l4sh66lvxbnadi4bznl3a.us-west-2.es.amazonaws.com"
-benchmark = Benchmark(open("ocm-requests.json"), database)
+    uuid="aeed6306-b7e1-11eb-b313-e86a640406b2"
+    database="elasticsearch"
+    es_index = "ocm-requests"
+    es_url="https://search-perfscale-dev-chmf5l4sh66lvxbnadi4bznl3a.us-west-2.es.amazonaws.com"
+    benchmark = Benchmark(open("ocm-requests.json"), database)
 
 Touchstone (original function call in jupyter):
 
