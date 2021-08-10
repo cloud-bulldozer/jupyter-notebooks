@@ -1,0 +1,24 @@
+{
+  "elasticsearch": {
+    "ocm-requests": [
+      {
+        "exclude": { "has_error": false},
+        "buckets": [
+          "code",
+          "bytes_in",
+          "bytes_out"
+        ],
+        "aggregations": {
+          "latency_ns": [
+            "max",
+            "avg"
+          ]
+        }
+      }
+    ]
+  }
+}
+
+
+
+
