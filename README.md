@@ -29,18 +29,15 @@ Touchstone (original function call in jupyter):
   4) Returns nested dictionary
   
   example:
-  
-  for compute in benchmark.compute_map['ocm-requests'] :
-  
-      conn=databases.grab(database,es_url)
-      
-      result=conn.emit_compute_dict(uuid,
-                                    compute,
-                                    "ocm-requests",
-                                    "uuid")
-                                    
-      mergedicts(result,main)
-      
+
+    for compute in benchmark.compute_map['ocm-requests'] :
+        conn=databases.grab(database,es_url)    
+        result=conn.emit_compute_dict(uuid,
+                                      compute,
+                                      "ocm-requests",
+                                      "uuid")                                 
+        mergedicts(result,main)
+
       
 Touchstone (new function call in jupyter):
 
@@ -50,15 +47,15 @@ Touchstone (new function call in jupyter):
   4) JSON file must contain "timeseries": true statement 
   
   example:
-  for compute in benchmark.compute_map['ocm-requests'] :
   
-    print("Getting results")
-    timeseries_result1 = database_instance.get_timeseries_results(uuid=uuid, 
-                                                                 compute_map = compute,
-                                                                 index = "ocm-requests",
-                                                                 identifier="uuid"
-                                                                )   
-    df = pd.DataFrame(timeseries_result1)
+    for compute in benchmark.compute_map['ocm-requests'] :
+      print("Getting results")
+      timeseries_result1 = database_instance.get_timeseries_results(uuid=uuid, 
+                                                                   compute_map = compute,
+                                                                   index = "ocm-requests",
+                                                                   identifier="uuid"
+                                                                  )   
+      df = pd.DataFrame(timeseries_result1)
 
 
 
