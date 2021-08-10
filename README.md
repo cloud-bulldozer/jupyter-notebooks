@@ -19,6 +19,7 @@ es_url="https://search-perfscale-dev-chmf5l4sh66lvxbnadi4bznl3a.us-west-2.es.ama
 benchmark = Benchmark(open("ocm-requests.json"), database)
 
 Touchstone (original function call in jupyter):
+
   This is specified by calling the conn.emit_compute_dict function
   Can create aggregations and filter data through touchstone 
   Limit of 10k records
@@ -35,6 +36,7 @@ Touchstone (original function call in jupyter):
       
       
 Touchstone (new function call in jupyter):
+
   This is specified by calling the database_instance.get_timeserices_results
   Does not have a limit of 10k
   return a dictionary
