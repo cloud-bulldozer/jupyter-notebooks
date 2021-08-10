@@ -46,7 +46,7 @@ Touchstone (new function call in jupyter):
     print("Getting results")
     timeseries_result1 = database_instance.get_timeseries_results(uuid=uuid, 
                                                                  compute_map = compute,
-                                                                 index = es_index,
+                                                                 index = "ocm-requests",
                                                                  identifier="uuid"
                                                                 )   
     df = pd.DataFrame(timeseries_result1)
