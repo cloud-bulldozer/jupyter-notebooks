@@ -20,10 +20,10 @@ benchmark = Benchmark(open("ocm-requests.json"), database)
 
 Touchstone (original function call in jupyter):
 
-  This is specified by calling the conn.emit_compute_dict function
-  Can create aggregations and filter data through touchstone 
-  Limit of 10k records
-  Returns nested dictionary
+  1) This is specified by calling the conn.emit_compute_dict function
+  2) Can create aggregations and filter data through touchstone 
+  3) Limit of 10k records
+  4) Returns nested dictionary
   
   example:
   for compute in benchmark.compute_map['ocm-requests'] :
