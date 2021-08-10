@@ -1,12 +1,11 @@
 # perfscale-jupyter-notebooks
-Jupyter Notebooks used by the Performance &amp; Scale Organization
+Jupyter Notebooks used by the Performance & Scale Organization
 
-This page contains file to automate visualizations using jupyter nootebooks using Touchstone.
+This page contains files to automate visualizations using jupyter notebooks using Touchstone.
 
-There are 2 different fuction that can be called by Touchstone
-1) Provides data vast amount of data that is mostly used for calling data with timestamps. This data can not use the aggregate function in the JSON file.
-2) Retrives data upto 10k records with aggreation function 
-
+There are 2 different function that can be called by Touchstone
+1) Provides vast amounts of data that is mostly used for calling data with timestamps. This data can not use the aggregate function in the JSON file.
+2) Retrieves data upto 10k records with aggregation function
 
 
 Below is an example of how to use touchstone with jupyter notebooks 
