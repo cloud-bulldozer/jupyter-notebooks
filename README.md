@@ -49,7 +49,6 @@ Touchstone (new function call in jupyter):
   example:
   
     for compute in benchmark.compute_map['ocm-requests'] :
-      print("Getting results")
       timeseries_result1 = database_instance.get_timeseries_results(uuid=uuid, 
                                                                    compute_map = compute,
                                                                    index = "ocm-requests",
