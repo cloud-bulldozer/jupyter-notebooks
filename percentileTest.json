@@ -1,0 +1,18 @@
+{
+    "elasticsearch": {
+      "metadata": {
+      },
+      "ocm-requests": [
+        {
+          "buckets": [
+            "test_name.keyword",
+            "method.keyword",
+            "code"
+          ],
+          "aggregations": {
+            "latency_ns": [ "avg", {"percentiles": {"percents": [90,95, 99]}}]
+          }
+        }
+      ]
+    }
+  }
