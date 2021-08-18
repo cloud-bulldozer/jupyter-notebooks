@@ -56,7 +56,12 @@ Touchstone (new function call in jupyter):
                                                                   )
       df = pd.DataFrame(timeseries_result1)
 
+## Building contaioner image
 
+To build the image
 
+`podman build --tag quay.io/cloud-bulldozer/jupyterlab:v$(cat VERSION) -f ci/images/Dockerfile`
 
+To run
 
+`podman run --rm -p 8888:8888 localhost/jupyterlab:v$(cat VERSION)`
